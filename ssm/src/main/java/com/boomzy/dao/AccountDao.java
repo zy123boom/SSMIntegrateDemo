@@ -21,7 +21,6 @@ public interface AccountDao {
      *
      * @return
      */
-    @Select("select * from account")
     public List<Account> findAll();
 
     /**
@@ -29,6 +28,5 @@ public interface AccountDao {
      *
      * @param account
      */
-    @Insert("insert into account (name, money) values (#{name}, #{money})")
     public void saveAccount(Account account);
 }
